@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "storageName": {
-            "type": "string",
+            "type": "stringit pull g",
             "minLength":3,
             "maxLength":24,
             "metadata": {
@@ -21,10 +21,9 @@
                 "Standard_ZRS",
                 "Premium_LRS",
                 "Premium_ZRS",
-                "Standard_GZRS",
-                "Standard_RAGZRS"
+                "Standard_GZRS"
             ],
-            "metadata": {
+            "metadata": {   
                 "description": "allowed values for Azure storage account"
             }
         }
