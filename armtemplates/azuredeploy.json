@@ -21,6 +21,13 @@
                 "Standard_GZRS",
                 "Standard_RAGZRS"
             ]
+        },
+        "resourceTag": {
+            "type": "object",
+            "defaultValue": {
+                "Enviroment": "Dev",
+                "Project": "Tutorial"
+            }
         }
     },
     "functions": [],
@@ -32,9 +39,7 @@
             "name": "[variables('uniqueStorageName')]",
             "type": "Microsoft.Storage/storageAccounts",
             "apiVersion": "2019-06-01",
-            "tags": {
-                "displayName": "[variables('uniqueStorageName')]"
-            },
+            "tags": "[parameters('resourceTag')]",
             "location": "[resourceGroup().location]",
             "kind": "StorageV2",
             "sku": {
