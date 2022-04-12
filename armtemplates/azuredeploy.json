@@ -22,7 +22,7 @@
                 "Standard_RAGZRS"
             ]
         },
-        "resourceTag": {
+        "resourceTags": {
             "type": "object",
             "defaultValue": {
                 "Enviroment": "Dev",
