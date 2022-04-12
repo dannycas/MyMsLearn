@@ -3,14 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "storageName": {
-            "type": "stringit pull g",
+            "type": "string",
             "minLength":3,
             "maxLength":24,
             "metadata": {
                 "description": "The name of the Azure storage resource"
             }
         },
-        //This is the allowed values for Azure storage account
         "storageSKU": {
             "type": "string",
             "defaultValue":"Standard_LRS",
